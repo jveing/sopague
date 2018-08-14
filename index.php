@@ -28,7 +28,53 @@
   </head>
 
   <body id="page-top">
+  <?php
+  if (isset($_POST['BTEnvia'])) {
 
+  	//Variaveis de POST, Alterar somente se necessário
+  	//====================================================
+  	$nome = $_POST['nome'];
+  	$email = $_POST['email'];
+  	$telefone = $_POST['telefone'];
+  	$mensagem = $_POST['mensagem'];
+  	//====================================================
+
+  	//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
+  	//====================================================
+  	$email_remetente = "comercial@sopague.com.br"; // deve ser uma conta de email do seu dominio
+  	//====================================================
+
+  	//Configurações do email, ajustar conforme necessidade
+  	//====================================================
+  	$email_destinatario = "joaovitor.logpro@gmail.com"; // pode ser qualquer email que receberá as mensagens
+  	$email_reply = "$email";
+  	$email_assunto = "Contato formmail"; // Este será o assunto da mensagem
+  	//====================================================
+
+  	//Monta o Corpo da Mensagem
+  	//====================================================
+  	$email_conteudo = "Nome = $nome \n";
+  	$email_conteudo .= "Email = $email \n";
+  	$email_conteudo .= "Telefone = $telefone \n";
+  	$email_conteudo .= "Mensagem = $mensagem \n";
+  	//====================================================
+
+  	//Seta os Headers (Alterar somente caso necessario)
+  	//====================================================
+  	$email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
+  	//====================================================
+
+  	//Enviando o email
+  	//====================================================
+  	if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){
+  					echo "</b>E-Mail enviado com sucesso!</b>";
+  					}
+  			else{
+  					echo "</b>Falha no envio do E-Mail!</b>"; }
+  	//====================================================
+  }
+
+  ?>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background:#fff;">
       <div class="container">
@@ -39,7 +85,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#beneficios">Benefícios</a>
+              <a class="nav-link js-scroll-trigger" href="#vendamais">Venda Mais</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#sopague">SoPague</a>
@@ -199,11 +245,11 @@
       </div>
     </section>
   -->
-      <section id="beneficios">
+      <section id="vendamais">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Benefícios</h2>
+              <h2 class="section-heading">Venda Mais</h2>
               <hr class="my-4">
             </div>
           </div>
@@ -359,10 +405,10 @@
               </div>
             </div>
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/mao.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-7">
                 <h4 class="text-secundary  faded margin-bottom-20">Débito/Crédito POS</h4>
                 <div class="text-secundary text-white" >
                       - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
@@ -376,7 +422,7 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7 offset-lg-1">
+              <div class="col-lg-7">
                 <h4 class="text-secundary  faded margin-bottom-20">Módulo Água</h4>
                 <div class="text-secundary text-white" >
                       - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
@@ -384,8 +430,8 @@
                       - Extrato;
                 </div>
               </div>
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5" style="-webkit-transform: scaleX(-1);transform: scaleX(-1);">
+                <img class="img-fluid" src="img/mao.png">
               </div>
             </div>
 
@@ -607,11 +653,11 @@
          <div class="col-lg-8 mx-auto">
            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-           <form name="sentMessage" id="contactForm" novalidate="novalidate">
+           <form name="sentMessage" id="contactForm" novalidate="novalidate" action="<? $PHP_SELF; ?>" method="POST">
              <div class="control-group">
                <div class="form-group floating-label-form-group controls mb-0 pb-2">
                  <label>Nome</label>
-                 <input class="form-control" id="name" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor, coloque seu nome.">
+                 <input class="form-control" id="nome" type="text" placeholder="Nome" required="required" data-validation-required-message="Por favor, coloque seu nome.">
                  <p class="help-block text-danger"></p>
                </div>
              </div>
@@ -625,21 +671,22 @@
              <div class="control-group">
                <div class="form-group floating-label-form-group controls mb-0 pb-2">
                  <label>Telefone</label>
-                 <input class="form-control" id="phone" type="tel" placeholder="(xx)xxxx-xxxx" required="required" data-validation-required-message="Por favor, coloque o número do seu telefone.">
+                 <input class="form-control" id="fone" type="tel" placeholder="(xx)xxxx-xxxx" required="required" data-validation-required-message="Por favor, coloque o número do seu telefone.">
                  <p class="help-block text-danger"></p>
                </div>
              </div>
              <div class="control-group">
                <div class="form-group floating-label-form-group controls mb-0 pb-2">
                  <label>Mensagem</label>
-                 <textarea class="form-control" id="message" rows="5" placeholder="Escreva sua mensagem" required="required" data-validation-required-message="Por favor, mande uma mensagem."></textarea>
+                 <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua mensagem" required="required" data-validation-required-message="Por favor, mande uma mensagem."></textarea>
                  <p class="help-block text-danger"></p>
                </div>
              </div>
              <br>
              <div id="success"></div>
              <div class="form-group">
-               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
+               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton" name="BTEnvia" value="Enviar">Enviar</button>
+               <input type="reset" name="BTApaga" value="Apagar">
              </div>
            </form>
          </div>

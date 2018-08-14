@@ -350,3 +350,16 @@ header.masthead p {
 .margin-bottom-20{
   margin-bottom:20px;
 }
+
+.red{
+    background: #ff0000;
+}
+
+.yellow{
+    background: #fff000;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0 !important;
+    padding-left:0 !important;
+}
