@@ -406,14 +406,12 @@
             </div>
             <div class="row margin-top-1">
               <div class="col-lg-5">
-                <img class="img-fluid" src="img/mao.png">
+                <img class="img-fluid" src="img/maoCredito.png">
               </div>
-              <div class="col-lg-7">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">Débito/Crédito POS</h4>
                 <div class="text-secundary text-white" >
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Extrato;
+                      - Captura de transacões de débito e crédito.;
                 </div>
               </div>
             </div>
@@ -422,12 +420,10 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7">
+              <div class="col-lg-6 offset-lg-1">
                 <h4 class="text-secundary  faded margin-bottom-20">Módulo Água</h4>
                 <div class="text-secundary text-white" >
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Extrato;
+                      - Sistema para facilitar simplificar as dividas entre os departamentos e munícipes;
                 </div>
               </div>
               <div class="col-lg-5" style="-webkit-transform: scaleX(-1);transform: scaleX(-1);">
@@ -439,15 +435,13 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoWeb.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">Web</h4>
                 <div class="text-secundary text-white" >
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
-                      - Extrato;
+                      - Sistema de acompanhamento de transações em tempo real;
                 </div>
               </div>
             </div>
@@ -456,7 +450,7 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7 offset-lg-1">
+              <div class="col-lg-6 offset-lg-1">
                 <h4 class="text-secundary  faded margin-bottom-20">Acompanhamento de Transações</h4>
                 <div class="text-secundary text-white" >
                       - Acompanhamento e controle de transações financeiras operadas em sua plataforma;</br>
@@ -464,8 +458,8 @@
                       - Extrato;
                 </div>
               </div>
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoTransacao.png">
               </div>
             </div>
 
@@ -473,10 +467,10 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoTransacao2.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">Liquidação de Transações</h4>
                 <div class="text-secundary text-white" >
                     - Integração via CNAB para liquidação de transações;</br>
@@ -496,7 +490,7 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7 offset-lg-1">
+              <div class="col-lg-6 offset-lg-1">
                 <h4 class="text-secundary  faded margin-bottom-20">Conciliação</h4>
                 <div class="text-secundary text-white" >
                     - Conciliação de ajustes de crédito;</br>
@@ -505,7 +499,7 @@
                     - Rotina para gerar arquivo retorno de arrecadação;
                 </div>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-5">
                 <img class="rounded-circle offset-md-3" src="img/1.jpg">
               </div>
             </div>
@@ -514,10 +508,10 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoBackOffice.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">Back Office</h4>
                 <div class="text-secundary text-white" >
                     - Gestão de Acessos;</br>
@@ -535,15 +529,16 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7 offset-lg-1">
+              <div class="col-lg-6 offset-lg-1">
                 <h4 class="text-secundary  faded margin-bottom-20">Gateway</h4>
                 <div class="text-secundary text-white" >
                     - Integração DXC - API de pagamentos;</br>
-                    - Gerenciamento de Fallback ;
+                    - Gerenciamento de Fallback ;</br>
+                    - Pagamentos por meio de sites e aplicativos;
                 </div>
               </div>
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoGateway.png">
               </div>
             </div>
 
@@ -551,10 +546,10 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoCompany.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">In Company</h4>
                 <div class="text-secundary text-white" >
                     - Relatório Análítico de Vendas Conciliadas;</br>
@@ -580,15 +575,15 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-7 offset-lg-1">
+              <div class="col-lg-6 offset-lg-1">
                 <h4 class="text-secundary  faded margin-bottom-20">PIN PAD</h4>
                 <div class="text-secundary text-white" >
                     - Relatório Análítico de Vendas Conciliadas;</br>
-                    - Relatório Anál`itico de Divergências de Vendas;
+                    - Relatório Análítico de Divergências de Vendas;
                 </div>
               </div>
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoPinPad.png">
               </div>
             </div>
 
@@ -596,10 +591,10 @@
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
-              <div class="col-lg-4">
-                <img class="rounded-circle offset-md-3" src="img/1.jpg">
+              <div class="col-lg-5">
+                <img class="img-fluid" src="img/maoPCI.png">
               </div>
-              <div class="col-lg-8">
+              <div class="col-lg-6">
                 <h4 class="text-secundary  faded margin-bottom-20">PCI DSS</h4>
                 <div class="text-secundary text-white" >
                     - Integração DXC - API de pagamentos;</br>
