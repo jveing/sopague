@@ -296,7 +296,7 @@
             <hr class="light my-4">
             <div class="row">
               <div class="col-lg-4">
-                <img class="img-fluid" src="img/cardmachine.png" alt="" style="margin-top:25%;">
+                <img class="img-fluid" src="img/cardmachineweb.png" alt="" style="margin-top:25%;">
               </div>
               <div class="col-lg-8">
                 <div class="row">
