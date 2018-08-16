@@ -192,7 +192,7 @@
         .jssora051.jssora051dn {opacity:.5;}
         .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
     </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:75px;left:0px;width:1300px;height:300px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:75px;left:0px;width:1300px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
@@ -200,13 +200,6 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
             <div>
                 <img data-u="image" src="img/001.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/002.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/003.jpg" />
-
             </div>
         </div>
         <!-- Bullet Navigator -->
@@ -427,7 +420,7 @@
                 </div>
               </div>
               <div class="col-lg-5" style="-webkit-transform: scaleX(-1);transform: scaleX(-1);">
-                <img class="img-fluid" src="img/mao.png">
+                <img class="img-fluid" src="img/maoAgua.png">
               </div>
             </div>
 
@@ -466,7 +459,7 @@
             <div class="margin-top-1">
             <div class="dropdown-divider"></div>
 
-            <div class="row margin-top-1">
+            <!--<div class="row margin-top-1">
               <div class="col-lg-5">
                 <img class="img-fluid" src="img/maoTransacao2.png">
               </div>
@@ -484,9 +477,9 @@
                     - Cálculo da tarifa do cliente COMPESA + Juros e Multas;
                 </div>
               </div>
-            </div>
+            </div>-->
 
-            <div class="margin-top-1">
+            <!--<div class="margin-top-1">
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
@@ -502,9 +495,9 @@
               <div class="col-lg-5">
                 <img class="rounded-circle offset-md-3" src="img/1.jpg">
               </div>
-            </div>
+            </div>-->
 
-            <div class="margin-top-1">
+            <!--<div class="margin-top-1">
             <div class="dropdown-divider"></div>
 
             <div class="row margin-top-1">
@@ -523,10 +516,7 @@
 
                 </div>
               </div>
-            </div>
-
-            <div class="margin-top-1">
-            <div class="dropdown-divider"></div>
+            </div>-->
 
             <div class="row margin-top-1">
               <div class="col-lg-6 offset-lg-1">
